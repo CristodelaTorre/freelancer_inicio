@@ -11,7 +11,13 @@
 
 html {
     font-size: 62.5%;
+    /* Snippet que facilita el modelo caja en CSS */
+    box-sizing: border-box;
 
+}
+/* El asterisco selecciona todos los elementos del documento *:before y *:after selecciona los pseudo elementos */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -26,6 +32,8 @@ body{
   font-style: normal;
 
 }
+
+
 
 .titulo span {
     font-size: 2rem;
@@ -79,7 +87,15 @@ flex-direction: column;
 
 }
 
-
+/*Configuracion de imagen de hero */
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+   /* padding es el espacio entre el borde y el contenido */
+    padding: 20px;
+}
 
 
 /* Media Queries - Sirven para adaptar la pantalla en varios dispositivos ya sean computadoras o moviles */
